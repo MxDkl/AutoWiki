@@ -12,6 +12,12 @@ def genDoc(path):
     Given a website path, you will generate a short but consise html file containing documentation related to the path.
     Use a dark theme for the documentation. Background color: #1e1e2e.
     Crucial: At every opprotunity you will link to other relative paths of this website.
+    Sitemap of the website so you can infer what to do:
+    /languages.html                     # list of all languages (home page)
+    /<language>/<language>.html         # documentation main page for the language
+    /<language>/operators               # documentation page for the language operators
+    /<language>/libraries               # documentation page for the language libraries
+    etc.
 
     You will now be given a path. You will generate documentation for the path.
     The path you are given is: {path}
