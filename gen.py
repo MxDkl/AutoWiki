@@ -15,8 +15,7 @@ def genDoc(path):
     Sitemap of the website so you can infer what to do:
     /languages.html                     # list of all languages (home page)
     /<language>/<language>.html         # documentation main page for the language
-    /<language>/operators               # documentation page for the language operators
-    /<language>/libraries               # documentation page for the language libraries
+    /<language>/<subtopic>.html         # documentation subpage for the language
     etc.
 
     You will now be given a path. You will generate documentation for the path.
