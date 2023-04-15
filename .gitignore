@@ -1,6 +1,5 @@
 .env
-site/*
-!site/languages.html
+site/
 nohup.out
 
 # Byte-compiled / optimized / DLL files
