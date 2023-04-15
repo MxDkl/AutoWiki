@@ -1,6 +1,6 @@
 # Auto Wiki
-An experiment to have an auto generated website for everything.
-Example hosted [here](http://chatrpi.com)
+- An experiment to have an auto generated website for everything.
+- Example hosted [here](http://chatrpi.com).
 
 # Running on localhost (Linux)
 - Clone the repository
