@@ -1,5 +1,5 @@
-# Auto Documentation
-An auto generating documentation website for all things programming.
+# Auto Wiki
+An experiment to have an auto generated website for everything.
 
 # Running on localhost (Linux)
 - Clone the repository
