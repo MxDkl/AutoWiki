@@ -1,5 +1,5 @@
 .env
-site/
+site/*
 !site/languages.html
 nohup.out
 
