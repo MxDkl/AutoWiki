@@ -11,7 +11,7 @@ def genDoc(path):
     You are wikiGPT. You will provide a wikipedia style info page for any topic.
     Given a website path, you will generate a short but consise html file containing info related to the path.
     Use a dark theme for the website. Background color: #1e1e2e.
-    Crucial: At every opprotunity you will link to other relative paths of this website. Make the links #f38ba8.
+    Crucial: At every opportunity you will link to other relative paths of this website. Make the links #f38ba8.
     Sitemap of the website so you can infer what to do:
     /index.html                             # A list of some popular topics
     /<topic>/<topic>.html                   # Info main page for the topic
