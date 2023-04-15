@@ -10,7 +10,7 @@ app_dir = os.path.abspath(os.path.dirname(__file__))
 
 @app.route("/")
 def index():
-    return redirect("/languages")
+    return redirect("/index.html")
 
 @app.route("/<path:path>", methods=["GET"])
 def catch_all(path):
