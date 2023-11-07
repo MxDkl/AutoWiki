@@ -1,4 +1,4 @@
-.env
+# Project specific ignores
 site/
 nohup.out
 

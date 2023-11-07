@@ -1,9 +1,11 @@
 import os
 from dotenv import load_dotenv
-import openai
+from openai import OpenAI
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OpenAI.api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI()
 
 
 def genDoc(path):
@@ -17,20 +19,20 @@ def genDoc(path):
     /<topic>/<subtopic>/<subtopic>.html     # Info subpage for the subtopic
     etc.
 
-    Use a dark theme for the website. Background color: #1e1e2e.
-    Use nice buttons for all the links. Make the links #f38ba8. 
-    Add other div elements and colors to make the website look nice.
+    Use a dark Nord theme for the website. Make nice buttons and other interavtive elements.
+
+    Do not ever append or prepend any explanation to the generated file. DO NOT USE CODE BLOCKS.
 
     You will now be given a path. You will generate info for the path.
     The path you are given is: {path}
     """.format(path=path)
 
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
+    response = client.chat.completions.create(
+        model="gpt-4-1106-preview",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.0
     )
-    site = response["choices"][0]["message"]["content"]
+    site = response.choices[0].message.content
     return site
 
 if __name__ == "__main__":
